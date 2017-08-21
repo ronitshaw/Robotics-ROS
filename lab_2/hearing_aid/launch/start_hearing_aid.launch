@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="my_talker" name="my_talker_node" type="my_talker_node" output="screen" />
+  <node pkg="my_listener" name="my_listener_node" type="my_listener_node" output="screen" launch-prefix="xterm -e" />
+  <node pkg="hearing_aid" name="power_node" type="power_node" output="screen" launch-prefix="xterm -e" />
+  <node pkg="hearing_aid" name="hearing_aid_node" type="hearing_aid_node" output="screen" />
+</launch>

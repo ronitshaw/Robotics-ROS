@@ -1,0 +1,7 @@
+<launch>  
+  <!-- Launches the turtle simulator node. -->
+  <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" />
+  
+  <!-- LAUNCH YOUR TURTLE INITIALS NODE HERE. -->
+<node name="turtle_initials_node" pkg="turtle_initials" type="turtle_initials_node" />
+</launch>

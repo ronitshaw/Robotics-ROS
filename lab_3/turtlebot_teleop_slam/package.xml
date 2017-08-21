@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>turtlebot_teleop_slam</name>
+  <version>0.0.0</version>
+  <description>The turtlebot_teleop_slam package</description>
+
+  <maintainer email="todo@todo.todo">todo</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>turtlebot_gazebo</build_depend>
+  <build_depend>turtlebot_teleop</build_depend>
+  
+  <run_depend>turtlebot_gazebo</run_depend>
+  <run_depend>turtlebot_teleop</run_depend>
+</package>

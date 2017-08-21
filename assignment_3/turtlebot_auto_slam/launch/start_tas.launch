@@ -1,0 +1,26 @@
+<launch>
+  <!-- Include the launch file that launches a gazebo world. -->
+  
+  <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+    <arg name="world_file" value="$(find turtlebot_auto_slam)/worlds/tas.world"/>
+  
+  </include>
+
+  <!-- Include the gmapping demo launch file provided by turtlebot_gazebo package. -->
+  
+  <include file="$(find turtlebot_gazebo)/launch/gmapping_demo.launch" />
+
+
+  <!-- Launch ROS visualization with custom rviz. -->
+  <node pkg="rviz" type="rviz" name="rviz"
+        args= "-d $(find turtlebot_auto_slam)/rviz/tas.rviz" />
+
+  <!-- Start your turtlebot control node. -->
+  <node pkg="turtlebot_auto_slam" 
+        type="turtlebot_auto_slam_node"
+        name="turtlebot_auto_slam_node"  />
+    
+ 
+    
+  
+</launch>
